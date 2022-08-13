@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Comfirmation</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background: #0f1131;
+            font-family: "Poppins", sans-serif;
+            color: #efefef;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .user-card {
+            margin-top: 100px;
+            display: flex;
+            justify-content: start;
+            gap: 20px;
+            padding: 20px;
+            background-color: rgb(12, 10, 57);
+            border-radius: 5px;
+        }
+        
+        .user-card img {
+            max-width: 30%;
+        }
+        
+        #inputFeild {
+            border: none;
+            outline: none;
+            padding: 10px;
+            color: #efefef;
+            font-size: 20px;
+            color: #efefef;
+            border-radius: 4px;
+            background: rgb(12, 10, 57);
+        }
+        
+        .delt {
+            border: none;
+            outline: none;
+            padding: 7px 30px;
+            color: #f2f4ff;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: rgb(35, 28, 63);
+            font-weight: 900;
+            margin-top: 30px;
+            cursor: pointer;
+            opacity: 0.3;
+        }
+        
+        .show {
+            opacity: 1;
+        }
+    </style>
+    <div class="container">
+        <div class="">
+            <h2 id="message">Type sorry To Delete The User</h2>
+            <input type="text" id="inputFeild" />
+            <button id="deleteButton" class="delt" disabled>Delete</button>
+        </div>
+        <div class="user-card" id="willHidden">
+            <img src="./player-2.png" alt="" />
+            <div>
+                <h2>Abullah Alim</h2>
+                <p>The Game Changer</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./deleteComfirmation.js"></script>
+</body>
+
+</html>

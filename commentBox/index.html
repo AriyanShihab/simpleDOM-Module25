@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment Box</title>
+</head>
+
+<body>
+    <!-- basic styling -->
+
+    <style>
+        body {
+            background: rgb(24, 19, 43);
+            font-family: "Poppins", sans-serif;
+        }
+        
+        h2 {
+            color: rgb(181, 197, 212);
+        }
+        
+        .container {
+            display: grid;
+            place-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            min-height: 100vh;
+        }
+        
+        .commentContainer {
+            padding: 20px;
+            border: 1px solid #c2caf843;
+            border-radius: 5px;
+            margin-top: 50px;
+            background: rgb(35, 28, 63);
+            min-width: 90%;
+            margin: 50px auto;
+        }
+        
+        .commnetBox {
+            padding: 20px;
+            border: 1px solid #c2caf843;
+            min-width: 90%;
+            margin: auto;
+            text-align: center;
+            border-radius: 5px;
+        }
+        
+        .commentContainer p {
+            color: #f2f4ff;
+            font-size: 18px;
+            margin-left: 30px;
+            line-height: 30px;
+        }
+        
+        #commnetInput {
+            width: 70%;
+            background: rgb(35, 28, 63);
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            color: #f2f4ff;
+            font-size: 22px;
+            padding: 30px;
+        }
+        
+        #addComment {
+            border: none;
+            outline: none;
+            padding: 10px 30px;
+            color: #f2f4ff;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: rgb(35, 28, 63);
+            font-weight: 900;
+            margin-top: 30px;
+        }
+    </style>
+    <div class="container">
+        <div class="commnetBox">
+            <h2>Add Your Commnet</h2>
+            <textarea id="commnetInput"></textarea> <br />
+            <button id="addComment">Add Comment</button>
+        </div>
+        <div id="commentHolder" class="commentContainer">
+            <h2>Comment List</h2>
+        </div>
+    </div>
+    <script src="./comment.js"></script>
+</body>
+
+</html>
